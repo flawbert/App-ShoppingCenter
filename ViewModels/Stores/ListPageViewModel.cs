@@ -22,7 +22,7 @@ namespace AppShoppingCenter.ViewModels.Stores
 
         public ListPageViewModel()
         {
-            var service = new StoreService();
+            var service = App.Current.Handler.MauiContext.Services.GetService<StoreService>();
             establishmentsFull = service.GetStores();
             establishmentsFiltered = establishmentsFull.ToList();
         }

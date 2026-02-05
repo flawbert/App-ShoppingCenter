@@ -528,6 +528,7 @@ C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.
 C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\AppShoppingCenter.AssemblyInfoInputs.cache
 C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\AppShoppingCenter.AssemblyInfo.cs
 C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\AppShoppingCenter.csproj.CoreCompileInputs.cache
+C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\AppShoppingCenter.sourcelink.json
 C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\XamlC.stamp
 C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\AppShopp.C3ACA43A.Up2Date
 C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\AppShoppingCenter.dll
