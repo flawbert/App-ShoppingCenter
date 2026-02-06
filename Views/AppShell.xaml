@@ -14,25 +14,25 @@
             Title="Stores"
             ContentTemplate="{DataTemplate stores:ListPage}"
             Icon="store.png"
-            Route="stores/list" />
+            Route="stores" />
 
         <ShellContent
             Title="Restaurants"
             ContentTemplate="{DataTemplate restaurants:ListPage}"
             Icon="restaurant.png"
-            Route="restaurants/list" />
+            Route="restaurants" />
 
         <ShellContent
             Title="Cinemas"
             ContentTemplate="{DataTemplate cinemas:ListPage}"
             Icon="cinema.png"
-            Route="cinemas/list" />
+            Route="cinemas" />
 
         <ShellContent
             Title="Tickets"
             ContentTemplate="{DataTemplate tickets:ListPage}"
             Icon="ticket.png"
-            Route="tickets/list" />
+            Route="tickets" />
     </TabBar>
 
 </Shell>

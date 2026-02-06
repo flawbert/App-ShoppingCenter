@@ -5,7 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace AppShoppingCenter.Services;
+
+namespace AppShoppingCenter.Services
+{
     public class StoreService
     {
         public List<Establishment> GetStores()
@@ -14,11 +16,11 @@ namespace AppShoppingCenter.Services;
         }
     }
 
-public class MockStoreService
-{
-    public static List<Establishment> GetStore()
+    public class MockStoreService
     {
-        return new List<Establishment>
+        public static List<Establishment> GetStore()
+        {
+            return new List<Establishment>
         {
             new Establishment
             {
@@ -163,6 +165,7 @@ public class MockStoreService
                 Cover = "https://mercadoeconsumo.com.br/wp-content/uploads/2020/10/C5D_9838.jpg"
             }
         };
+        }
     }
 }
 

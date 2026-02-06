@@ -67,6 +67,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Views.Re
 build_metadata.AdditionalFiles.TargetPath = Views\Restaurants\ListPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Restaurants\ListPage.xaml
 
+[C:/Users/70054324440/source/repos/ProjetosMAUI/AppShoppingCenter/Views/Stores/DetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Views.Stores.DetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Stores\DetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Stores\DetailPage.xaml
+
 [C:/Users/70054324440/source/repos/ProjetosMAUI/AppShoppingCenter/Views/Stores/ListPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Views.Stores.ListPage.xaml

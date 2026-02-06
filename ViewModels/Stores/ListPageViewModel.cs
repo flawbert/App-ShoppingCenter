@@ -34,5 +34,15 @@ namespace AppShoppingCenter.ViewModels.Stores
                 .Where(a => a.Name.ToLower().Contains(search.ToLower()))
                 .ToList();
         }
+
+[RelayCommand]
+        private async void OnTapEstablishmentGoToDetailPage(Establishment establishment)
+        {
+            var navigationParameter = new Dictionary<string, object>()
+        {
+            { "establishment", establishment }
+        };
+            await Shell.Current.GoToAsync("detail", navigationParameter);
+        }
     }
 }
