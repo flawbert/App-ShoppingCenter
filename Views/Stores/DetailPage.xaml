@@ -5,20 +5,113 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:vm="clr-namespace:AppShoppingCenter.ViewModels.Stores"
     Title="DetailPage">
+
     <ContentPage.BindingContext>
         <vm:DetailPageViewModel />
     </ContentPage.BindingContext>
+
     <ScrollView>
-        <VerticalStackLayout>
-            <Image Source="{Binding Establishment.Cover}" />
-            <Image Source="{Binding Establishment.Logo}" />
-            <Label
-                HorizontalOptions="Center"
-                Text="{Binding Establishment.Name}"
-                VerticalOptions="Center" />
-            <Label Text="{Binding Establishment.Description}" />
-            <Label Text="{Binding Establishment.Localization}" />
-            <Label Text="{Binding Establishment.Phone}" />
-        </VerticalStackLayout>
+        <Grid>
+
+            <!--  CAPA  -->
+            <Image
+                Aspect="AspectFill"
+                HeightRequest="260"
+                Source="{Binding Establishment.Cover}"
+                VerticalOptions="Start" />
+
+            <!--  BOTÃO VOLTAR  -->
+            <Image
+                Margin="16,40,0,0"
+                HorizontalOptions="Start"
+                Source="back.png"
+                VerticalOptions="Start"
+                WidthRequest="28"
+                ZIndex="2" />
+
+            <!--  CARD BRANCO  -->
+            <Border
+                Margin="0,220,0,0"
+                BackgroundColor="White"
+                StrokeShape="RoundRectangle 30,30,0,0"
+                StrokeThickness="0">
+
+                <Grid
+                    Padding="24"
+                    ColumnDefinitions="80, *"
+                    RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
+
+                    <!--  LOGO  -->
+                    <Image
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Aspect="AspectFit"
+                        HeightRequest="60"
+                        Source="{Binding Establishment.Logo}"
+                        WidthRequest="60" />
+
+                    <!--  NOME  -->
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Margin="100,0,0,0"
+                        Style="{StaticResource PrimaryText}"
+                        Text="{Binding Establishment.Name}"
+                        VerticalOptions="Center" />
+
+                    <!--  DESCRIÇÃO  -->
+                    <Label
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        Margin="0,16,0,0"
+                        Style="{StaticResource SecondaryText}"
+                        Text="{Binding Establishment.Description}" />
+
+                    <!--  LOCALIZAÇÃO  -->
+                    <Image
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Margin="0,20,0,0"
+                        Source="pin.png"
+                        WidthRequest="20" />
+
+                    <Label
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Margin="0,20,0,0"
+                        Style="{StaticResource HeadingText}"
+                        Text="Localização" />
+
+                    <Label
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        Style="{StaticResource DetailText}"
+                        Text="{Binding Establishment.Localization}" />
+
+                    <!--  TELEFONE  -->
+                    <Image
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Margin="0,16,0,0"
+                        Source="phone.png"
+                        WidthRequest="20" />
+
+                    <Label
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        Margin="0,16,0,0"
+                        Style="{StaticResource HeadingText}"
+                        Text="Telefone" />
+
+                    <Label
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        Style="{StaticResource DetailText}"
+                        Text="{Binding Establishment.Phone}" />
+
+                </Grid>
+            </Border>
+
+        </Grid>
     </ScrollView>
 </ContentPage>

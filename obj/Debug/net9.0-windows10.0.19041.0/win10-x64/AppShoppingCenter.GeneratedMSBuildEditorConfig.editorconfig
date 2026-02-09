@@ -47,6 +47,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Resource
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
+[C:/Users/70054324440/source/repos/ProjetosMAUI/AppShoppingCenter/Resources/Styles/ExplicitStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Resources.Styles.ExplicitStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\ExplicitStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\ExplicitStyles.xaml
+
 [C:/Users/70054324440/source/repos/ProjetosMAUI/AppShoppingCenter/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Resources.Styles.Styles.xaml

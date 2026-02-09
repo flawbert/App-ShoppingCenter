@@ -10,7 +10,10 @@
         <vm:ListPageViewModel />
     </ContentPage.BindingContext>
 
-    <Grid Padding="20" RowDefinitions="50, *">
+    <Grid
+        Padding="20"
+        RowDefinitions="50, *"
+        RowSpacing="20">
         <Border StrokeShape="RoundRectangle 5">
             <Border.Stroke>
                 <LinearGradientBrush EndPoint="1,1">
@@ -28,11 +31,35 @@
         <CollectionView Grid.Row="1" ItemsSource="{Binding EstablishmentsFiltered}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding Name}">
+                    <Grid
+                        Margin="0,10"
+                        ColumnDefinitions="80, *"
+                        RowDefinitions="Auto, Auto">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding Source={x:Reference vm}, Path=BindingContext.TapEstablishmentGoToDetailPageCommand}" CommandParameter="{Binding .}" />
                         </Label.GestureRecognizers>
-                    </Label>
+                        <Image
+                            Grid.RowSpan="2"
+                            Margin="0,0,15,0"
+                            Aspect="AspectFit"
+                            HeightRequest="70"
+                            Source="{Binding Logo}"
+                            VerticalOptions="Center"
+                            WidthRequest="70" />
+                        <Label
+                            Grid.Column="1"
+                            Style="{StaticResource PrimaryText}"
+                            Text="{Binding Name}"
+                            VerticalOptions="End" />
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            LineBreakMode="TailTruncation"
+                            MaxLines="2"
+                            Style="{StaticResource SecondaryText}"
+                            Text="{Binding Description}"
+                            VerticalOptions="Start" />
+                    </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

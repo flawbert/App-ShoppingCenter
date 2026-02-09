@@ -63,6 +63,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<MauiXaml Update="Resources\Styles\ExplicitStyles.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 		<MauiXaml Update="Views\Cinemas\ListPage.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>

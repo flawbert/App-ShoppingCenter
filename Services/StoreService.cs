@@ -44,7 +44,7 @@ namespace AppShoppingCenter.Services
                 Phone = "(61) 3154-1234",
                 Type = EstablishmentType.Store,
 
-                Logo = "https://gsobmidia.com.br/uploads/lojas/1587/any-any_1607606261.png",
+                Logo = "https://http2.mlstatic.com/D_NQ_NP_982830-MLA84984141777_052025-O.webp",
                 Cover = "https://th.bing.com/th/id/R.3e7fcd5a62c507e0fe520211dc4da74e?rik=EVnAQuH8VECIyQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-OINRmqrcATk%2fVSepgubwKfI%2fAAAAAAAAL8Q%2fg_kjz4q1Owc%2fs1600%2fany_any_franquia.jpg&ehk=4BVqFRPzznt5pjxTpqgmiaXrWVjyv7uHZqsHG8OeMZk%3d&risl=&pid=ImgRaw&r=0"
             },
 
@@ -57,8 +57,8 @@ namespace AppShoppingCenter.Services
                 Phone = "(61) 3154-1563",
                 Type = EstablishmentType.Store,
 
-                Logo = "https://w7.pngwing.com/pngs/1022/751/png-transparent-badboy-hd-logo.png",
-                Cover = "https://badboybrasilia.com.br/imagens/produtos/lojas/taguatinga_maior.JPG"
+                Logo = "https://1000logos.net/wp-content/uploads/2020/03/Badboy-Logo-old.png",
+                Cover = "https://storage.tgs-api.com/storage/images-tgs/uploads/2011/10/bad_boy.jpg"
             },
 
             new Establishment
@@ -77,14 +77,14 @@ namespace AppShoppingCenter.Services
             new Establishment
             {
                 Id = 5,
-                Name = "Brossman",
-                Description = "Luxo e sofisticação são encontrados na loja Brossman, que tem como carro chefe a marca Dudalina. Contamos com diversas opções em roupas sociais para homens.",
+                Name = "Leitura",
+                Description = "Inaugurada em 1967, na Galeria do Ouvidor, em Belo Horizonte, a Livraria Leitura começou sua história vendendo livros novos e usados, sendo uma das pioneiras no conceito de megastore, que consiste em lojas com mais de 1.000 m² e uma grande variedade de produtos culturais e de entretenimento.",
                 Localization = "1 Piso, Loja 05 - Setor Norte",
                 Phone = "(61) 3154-4153",
                 Type = EstablishmentType.Store,
 
-                Logo = "https://brossman.com.br/wp-content/uploads/2021/10/cropped-dg-coin-brossman-1.png",
-                Cover = "https://photos.wikimapia.org/p/00/02/58/51/10_big.jpg"
+                Logo = "https://3.bp.blogspot.com/-BlZsd6mKWk4/W369U0N_usI/AAAAAAAAQYA/8TNVWYBL9HUpXHGnFDZYGk_48XDGNsTKgCLcBGAs/s1600/logo-livrarialeitura.png",
+                Cover = "https://www.publishnews.com.br/estaticos/uploads/2022/01/8dOz2oPPTvXNHezvyihOfGcNMwzuRhSTaYGMLp2rOVkkS6O3hf1z1nGWUIGAGc8KuEUKOwzRHR2i1Fnj.jpg"
             },
 
             new Establishment
@@ -122,7 +122,7 @@ namespace AppShoppingCenter.Services
                 Phone = "(61) 3679-153",
                 Type = EstablishmentType.Store,
 
-                Logo = "https://cuponomia-a.akamaihd.net/img/stores/original/casas-bahia-637628912275644345.png",
+                Logo = "https://clubecerto.com.br/images/item/logo1.png",
                 Cover = "https://s2.glbimg.com/XO8XarHm4uZKPbyxNFpyE8JZlW0=/0x89:2048x1357/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2019/9/U/vyuTqHROC6j9Q6k7wRbg/19158185353-556b98ef7e-k.jpg"
             },
 

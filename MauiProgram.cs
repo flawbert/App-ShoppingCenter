@@ -16,7 +16,8 @@ namespace AppShoppingCenter
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("OpenSans-Light.ttf", "OpenSansLight");
+                    fonts.AddFont("OpenSans-Bold.ttf", "OpenSandBold");
                 });
             builder.Services.AddSingleton<StoreService>();
 
