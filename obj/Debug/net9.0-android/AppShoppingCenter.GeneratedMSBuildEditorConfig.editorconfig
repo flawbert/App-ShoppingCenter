@@ -91,11 +91,29 @@ build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Views.St
 build_metadata.AdditionalFiles.TargetPath = Views\Stores\ListPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Stores\ListPage.xaml
 
+[C:/Users/70054324440/source/repos/ProjetosMAUI/AppShoppingCenter/Views/Tickets/CameraPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Views.Tickets.CameraPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Tickets\CameraPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Tickets\CameraPage.xaml
+
 [C:/Users/70054324440/source/repos/ProjetosMAUI/AppShoppingCenter/Views/Tickets/ListPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Views.Tickets.ListPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Tickets\ListPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Tickets\ListPage.xaml
+
+[C:/Users/70054324440/source/repos/ProjetosMAUI/AppShoppingCenter/Views/Tickets/PayPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Views.Tickets.PayPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Tickets\PayPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Tickets\PayPage.xaml
+
+[C:/Users/70054324440/source/repos/ProjetosMAUI/AppShoppingCenter/Views/Tickets/ResultPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Views.Tickets.ResultPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Tickets\ResultPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Tickets\ResultPage.xaml
 
 [C:/Users/70054324440/source/repos/ProjetosMAUI/AppShoppingCenter/Views/Tickets/ScanPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

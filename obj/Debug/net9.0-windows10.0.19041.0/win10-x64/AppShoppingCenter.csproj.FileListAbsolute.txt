@@ -617,3 +617,6 @@ C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.
 C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\play.scale-150.png
 C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\play.scale-200.png
 C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\play.scale-400.png
+C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\zxing.dll
+C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\ZXing.Net.MAUI.dll
+C:\Users\70054324440\source\repos\ProjetosMAUI\AppShoppingCenter\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\ZXing.Net.MAUI.Controls.dll

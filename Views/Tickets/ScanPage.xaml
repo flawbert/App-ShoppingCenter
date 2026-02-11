@@ -3,11 +3,71 @@
     x:Class="AppShoppingCenter.Views.Tickets.ScanPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="ScanPage">
-    <VerticalStackLayout>
-        <Label
-            HorizontalOptions="Center"
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" />
-    </VerticalStackLayout>
+    xmlns:maui="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:system="clr-namespace:System;assembly=netstandard"
+    xmlns:vm="clr-namespace:AppShoppingCenter.ViewModels.Tickets"
+    Title="">
+    <ContentPage.BindingContext>
+        <vm:ScanPageViewModel />
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <StackLayout Padding="25">
+            <Label SemanticProperties.HeadingLevel="Level1">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Style="{StaticResource HeadingText01}" Text="Pague o seu" />
+                            <Span Text="{x:Static system:Environment.NewLine}" />
+                            <Span Style="{StaticResource HeadingText02}" Text="ESTACIONAMENTO" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Border Margin="0,50,0,0" Style="{StaticResource BorderStyle}">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ScanCommand}" />
+                </Border.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Entry
+                        x:Name="ticketEntry"
+                        Margin="{OnPlatform Default=0,
+                                            Android='10,0'}"
+                        HorizontalOptions="FillAndExpand"
+                        Placeholder="{OnPlatform Default='Digite/Escaneie o ticket',
+                                                 WinUI='Digite o ticket'}"
+                        SemanticProperties.Description="O número do ticket é formado por 12 digitos"
+                        SemanticProperties.Hint="{OnPlatform Default='Digite/Escaneie o ticket',
+                                                             WinUI='Digite o ticket'}"
+                        Text="{Binding TicketNumber}">
+                        <Entry.Behaviors>
+                            <maui:EventToCommandBehavior
+                                Command="{Binding CheckTicketNumberCommand}"
+                                CommandParameter="{x:Reference ticketEntry}"
+                                EventName="TextChanged" />
+                            <maui:MaskedBehavior Mask="XXX XXX XXX XXX" />
+                        </Entry.Behaviors>
+                    </Entry>
+                    <Image
+                        Margin="0,0,10,0"
+                        IsVisible="{OnPlatform WinUI=false,
+                                               Default=true}"
+                        SemanticProperties.Description="Leva a tela de escaneamento do ticket utilizando a câmera/webcam"
+                        SemanticProperties.Hint="Botão de Escanear"
+                        Source="{AppThemeBinding Light='camera.png',
+                                                 Dark='camera_light.png'}"
+                        VerticalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ScanCommand}" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+            </Border>
+            <Button
+                Command="{Binding ListCommand}"
+                SemanticProperties.Hint="Navega para a tela com todos os tickets já pagos"
+                Style="{StaticResource ButtonStyle}"
+                Text="Tickets pagos"
+                VerticalOptions="EndAndExpand" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
