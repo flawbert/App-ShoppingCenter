@@ -11,7 +11,7 @@
     </ContentPage.BindingContext>
 
     <Grid
-        Padding="20"
+        Padding="20,20,20,0"
         RowDefinitions="50, *"
         RowSpacing="20">
         <Border StrokeShape="RoundRectangle 5">
@@ -28,7 +28,10 @@
             Placeholder="Search stores..."
             Text="{Binding TextSearch}" />
 
-        <CollectionView Grid.Row="1" ItemsSource="{Binding EstablishmentsFiltered}">
+        <CollectionView
+            Grid.Row="1"
+            EmptyView="No results match this search."
+            ItemsSource="{Binding EstablishmentsFiltered}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid

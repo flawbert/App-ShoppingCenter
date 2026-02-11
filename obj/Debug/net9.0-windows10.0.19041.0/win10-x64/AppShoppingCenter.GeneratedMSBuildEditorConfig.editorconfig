@@ -65,6 +65,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Views.Ap
 build_metadata.AdditionalFiles.TargetPath = Views\AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\AppShell.xaml
 
+[C:/Users/70054324440/source/repos/ProjetosMAUI/AppShoppingCenter/Views/Cinemas/DetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Views.Cinemas.DetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Cinemas\DetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Cinemas\DetailPage.xaml
+
 [C:/Users/70054324440/source/repos/ProjetosMAUI/AppShoppingCenter/Views/Cinemas/ListPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppShoppingCenter.Views.Cinemas.ListPage.xaml

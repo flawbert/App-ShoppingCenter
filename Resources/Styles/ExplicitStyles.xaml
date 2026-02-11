@@ -14,6 +14,11 @@
         <Setter Property="FontSize" Value="12" />
         <Setter Property="FontFamily" Value="OpenSansLight" />
     </Style>
+    <Style x:Key="TercearyText" TargetType="Label">
+        <Setter Property="TextColor" Value="#404040" />
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="FontFamily" Value="OpenSansRegular" />
+    </Style>
     <Style x:Key="HeadingText" TargetType="Label">
         <Setter Property="TextColor" Value="#000000" />
         <Setter Property="FontSize" Value="14" />

@@ -20,6 +20,8 @@ namespace AppShoppingCenter
                     fonts.AddFont("OpenSans-Bold.ttf", "OpenSandBold");
                 });
             builder.Services.AddSingleton<StoreService>();
+            builder.Services.AddSingleton<RestaurantService>();
+            builder.Services.AddSingleton<CinemaService>();
 
 #if DEBUG
             builder.Logging.AddDebug();

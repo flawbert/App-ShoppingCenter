@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppShoppingCenter.Views.Cinemas.DetailPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:AppShoppingCenter.ViewModels.Cinemas">
+
+    <ContentPage.BindingContext>
+        <vm:DetailPageViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="4*, 6*">
+
+        <Image
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Aspect="AspectFill"
+            HeightRequest="500"
+            Source="{Binding Movie.Cover}"
+            VerticalOptions="Start" />
+
+        <Grid
+            Grid.Row="0"
+            Margin="20,50,20,0"
+            VerticalOptions="Start">
+
+            <ImageButton
+                BackgroundColor="Transparent"
+                Command="{Binding CloseCommand}"
+                HeightRequest="40"
+                HorizontalOptions="Start"
+                Source="close.png"
+                WidthRequest="40" />
+            <Border
+                Padding="12,6"
+                BackgroundColor="#99000000"
+                HorizontalOptions="End"
+                StrokeShape="RoundRectangle 20"
+                StrokeThickness="0">
+                <HorizontalStackLayout Spacing="6" VerticalOptions="Center">
+                    <Image
+                        HeightRequest="16"
+                        Source="clock.png"
+                        VerticalOptions="Center"
+                        WidthRequest="16" />
+                    <Label
+                        FontSize="14"
+                        Text="{Binding Movie.Duration}"
+                        TextColor="White"
+                        VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </Border>
+        </Grid>
+
+        <ImageButton
+            Grid.Row="0"
+            BackgroundColor="Transparent"
+            Command="{Binding PlayTrailerCommand}"
+            HeightRequest="75"
+            HorizontalOptions="Center"
+            Source="play.png"
+            VerticalOptions="Center"
+            WidthRequest="75" />
+        <Border
+            Grid.Row="1"
+            Margin="0,-30,0,0"
+            Padding="30,40,30,30"
+            BackgroundColor="White"
+            StrokeShape="RoundRectangle 30, 30, 0, 0"
+            StrokeThickness="0">
+            <ScrollView>
+                <VerticalStackLayout Spacing="25">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="22"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource PrimaryText}"
+                        Text="{Binding Movie.Name}" />
+
+                    <Label
+                        FontSize="16"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Justify"
+                        LineHeight="1.3"
+                        Style="{StaticResource TercearyText}"
+                        Text="{Binding Movie.Description}" />
+                </VerticalStackLayout>
+            </ScrollView>
+        </Border>
+    </Grid>
+</ContentPage>

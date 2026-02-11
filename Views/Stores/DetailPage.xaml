@@ -13,23 +13,24 @@
     <ScrollView>
         <Grid>
 
-            <!--  CAPA  -->
             <Image
                 Aspect="AspectFill"
                 HeightRequest="260"
                 Source="{Binding Establishment.Cover}"
                 VerticalOptions="Start" />
 
-            <!--  BOTÃO VOLTAR  -->
             <Image
                 Margin="16,40,0,0"
                 HorizontalOptions="Start"
                 Source="back.png"
                 VerticalOptions="Start"
                 WidthRequest="28"
-                ZIndex="2" />
+                ZIndex="2">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TapToBackCommand}" />
+                </Image.GestureRecognizers>
+            </Image>
 
-            <!--  CARD BRANCO  -->
             <Border
                 Margin="0,220,0,0"
                 BackgroundColor="White"
@@ -41,7 +42,6 @@
                     ColumnDefinitions="80, *"
                     RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
 
-                    <!--  LOGO  -->
                     <Image
                         Grid.Row="0"
                         Grid.Column="0"
@@ -50,7 +50,6 @@
                         Source="{Binding Establishment.Logo}"
                         WidthRequest="60" />
 
-                    <!--  NOME  -->
                     <Label
                         Grid.Row="0"
                         Grid.Column="2"
@@ -59,7 +58,6 @@
                         Text="{Binding Establishment.Name}"
                         VerticalOptions="Center" />
 
-                    <!--  DESCRIÇÃO  -->
                     <Label
                         Grid.Row="1"
                         Grid.ColumnSpan="2"
@@ -67,7 +65,7 @@
                         Style="{StaticResource SecondaryText}"
                         Text="{Binding Establishment.Description}" />
 
-                    <!--  LOCALIZAÇÃO  -->
+                    <!--  Start - Localization  -->
                     <Image
                         Grid.Row="2"
                         Grid.Column="0"
@@ -88,7 +86,9 @@
                         Style="{StaticResource DetailText}"
                         Text="{Binding Establishment.Localization}" />
 
-                    <!--  TELEFONE  -->
+                    <!--  End - Localization  -->
+
+                    <!--  Start - Phone  -->
                     <Image
                         Grid.Row="4"
                         Grid.Column="0"
@@ -108,6 +108,7 @@
                         Grid.Column="1"
                         Style="{StaticResource DetailText}"
                         Text="{Binding Establishment.Phone}" />
+                    <!--  End - Phone  -->
 
                 </Grid>
             </Border>
