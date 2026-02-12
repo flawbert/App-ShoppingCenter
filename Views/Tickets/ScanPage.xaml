@@ -23,48 +23,42 @@
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
+
             <Border Margin="0,50,0,0" Style="{StaticResource BorderStyle}">
-                <Border.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding ScanCommand}" />
-                </Border.GestureRecognizers>
-                <StackLayout Orientation="Horizontal">
+                <Grid ColumnDefinitions="*, Auto">
                     <Entry
-                        x:Name="ticketEntry"
+                        Grid.Column="0"
                         Margin="{OnPlatform Default=0,
                                             Android='10,0'}"
                         HorizontalOptions="FillAndExpand"
                         Placeholder="{OnPlatform Default='Digite/Escaneie o ticket',
                                                  WinUI='Digite o ticket'}"
-                        SemanticProperties.Description="O número do ticket é formado por 12 digitos"
-                        SemanticProperties.Hint="{OnPlatform Default='Digite/Escaneie o ticket',
-                                                             WinUI='Digite o ticket'}"
+                        ReturnCommand="{Binding CheckTicketNumberCommand}"
+                        ReturnType="Done"
                         Text="{Binding TicketNumber}">
                         <Entry.Behaviors>
-                            <maui:EventToCommandBehavior
-                                Command="{Binding CheckTicketNumberCommand}"
-                                CommandParameter="{x:Reference ticketEntry}"
-                                EventName="TextChanged" />
+                            <maui:EventToCommandBehavior Command="{Binding CheckTicketNumberCommand}" EventName="TextChanged" />
                             <maui:MaskedBehavior Mask="XXX XXX XXX XXX" />
                         </Entry.Behaviors>
                     </Entry>
+
                     <Image
+                        Grid.Column="1"
                         Margin="0,0,10,0"
-                        IsVisible="{OnPlatform WinUI=false,
-                                               Default=true}"
-                        SemanticProperties.Description="Leva a tela de escaneamento do ticket utilizando a câmera/webcam"
-                        SemanticProperties.Hint="Botão de Escanear"
+                        HeightRequest="24"
                         Source="{AppThemeBinding Light='camera.png',
                                                  Dark='camera_light.png'}"
-                        VerticalOptions="Center">
+                        VerticalOptions="Center"
+                        WidthRequest="24">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding ScanCommand}" />
                         </Image.GestureRecognizers>
                     </Image>
-                </StackLayout>
+                </Grid>
             </Border>
+
             <Button
                 Command="{Binding ListCommand}"
-                SemanticProperties.Hint="Navega para a tela com todos os tickets já pagos"
                 Style="{StaticResource ButtonStyle}"
                 Text="Tickets pagos"
                 VerticalOptions="EndAndExpand" />

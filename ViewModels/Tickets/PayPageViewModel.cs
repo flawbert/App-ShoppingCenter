@@ -16,6 +16,9 @@ public partial class PayPageViewModel : ObservableObject
         get { return ticket; }
         set
         {
+            // Proteção contra valor nulo
+            if (value == null) return;
+
             GenerateDateOutAndTolerance(value);
             GeneratePrice(value);
             SetProperty(ref ticket, value);
@@ -30,7 +33,8 @@ public partial class PayPageViewModel : ObservableObject
     {
         await Clipboard.Default.SetTextAsync(PixCode);
 
-        await Task.Delay(10000);
+        // Feedback visual ou espera (opcional, 10s pode ser muito longo para teste, reduza se necessário)
+        await Task.Delay(1000);
 
         var storage = App.Current.Handler.MauiContext.Services.GetService<TicketPreferenceStorage>();
         storage.Save(Ticket);
@@ -40,7 +44,9 @@ public partial class PayPageViewModel : ObservableObject
             { "ticket", Ticket }
         };
 
-        await Shell.Current.GoToAsync("../result", param);
+        // CORREÇÃO: Usar o nome absoluto da rota registrado no AppShell
+        // Em vez de "../result", usamos "TicketResult"
+        await Shell.Current.GoToAsync("TicketResult", param);
     }
 
     private void GenerateDateOutAndTolerance(Ticket ticket)
@@ -60,5 +66,4 @@ public partial class PayPageViewModel : ObservableObject
 
         ticket.Price = difTS.TotalMinutes * HourValue;
     }
-
 }

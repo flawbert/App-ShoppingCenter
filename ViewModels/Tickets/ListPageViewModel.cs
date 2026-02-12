@@ -1,5 +1,5 @@
 ﻿using AppShoppingCenter.Models;
-using AppShoppingCenter.Storages;
+using AppShoppingCenter.Services; // Adicione este using
 using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace AppShoppingCenter.ViewModels.Tickets;
@@ -11,7 +11,8 @@ public partial class ListPageViewModel : ObservableObject
 
     public ListPageViewModel()
     {
-        var storage = App.Current.Handler.MauiContext.Services.GetService<TicketPreferenceStorage>();
-        Tickets = storage.Load();
+
+        var service = new TicketService();
+        Tickets = service.GetTickets(0);
     }
 }

@@ -1,5 +1,4 @@
 ﻿using AppShoppingCenter.Services;
-using CommunityToolkit.Maui.Core.Platform;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
@@ -10,41 +9,90 @@ public partial class ScanPageViewModel : ObservableObject
     [ObservableProperty]
     private string ticketNumber;
 
-    [RelayCommand]
-    private void Scan()
-    {
-        Shell.Current.GoToAsync("camera");
-    }
+    private bool isNavigating = false;
 
     [RelayCommand]
-    private async void CheckTicketNumber(Entry entryTicketNumber)
+    private async Task Scan()
     {
-        if (TicketNumber?.Length < 15)
-            return;
+        if (isNavigating) return;
 
-        var service = App.Current.Handler.MauiContext.Services.GetService<TicketService>();
-        var ticket = service.GetTicket(TicketNumber);
-
-        if (ticket == null)
+        try
         {
-            await App.Current.MainPage.DisplayAlert("Ticket não encontrado!", $"Não localizamos o ticket {TicketNumber}", "OK");
-            return;
+            isNavigating = true;
+            await Shell.Current.GoToAsync("TicketsCamera");
         }
-
-        var param = new Dictionary<string, object>()
+        finally
         {
-            { "ticket", ticket }
-        };
-
-        await Shell.Current.GoToAsync("pay", param);
-        await entryTicketNumber.HideKeyboardAsync(CancellationToken.None);
-        TicketNumber = string.Empty;
+            isNavigating = false;
+        }
     }
 
+    [RelayCommand]
+    private async Task CheckTicketNumber()
+    {
+        if (isNavigating) return;
+
+        // Remove espaços para verificação e busca
+        var currentText = TicketNumber?.Replace(" ", "") ?? "";
+
+        if (currentText.Length < 12) return;
+
+        try
+        {
+            isNavigating = true;
+
+            await Task.Delay(300);
+
+            var service = new TicketService();
+
+            // CORRIGIDO: Passando 'currentText' (limpo) em vez de 'TicketNumber' (com espaços)
+            var ticket = service.GetTicket(currentText);
+
+            if (ticket == null)
+            {
+                await MainThread.InvokeOnMainThreadAsync(async () =>
+                {
+                    await App.Current.MainPage.DisplayAlert("Aviso", "Ticket não encontrado", "OK");
+                });
+                TicketNumber = string.Empty;
+                return;
+            }
+
+            var param = new Dictionary<string, object>()
+            {
+                { "ticket", ticket }
+            };
+
+            await MainThread.InvokeOnMainThreadAsync(async () =>
+            {
+                await Shell.Current.GoToAsync("TicketsPay", param);
+            });
+
+            TicketNumber = string.Empty;
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Erro na navegação: {ex.Message}");
+        }
+        finally
+        {
+            await Task.Delay(500);
+            isNavigating = false;
+        }
+    }
 
     [RelayCommand]
-    private void List()
+    private async Task List()
     {
-        Shell.Current.GoToAsync("list");
+        if (isNavigating) return;
+        isNavigating = true;
+        try
+        {
+            await Shell.Current.GoToAsync("TicketsList");
+        }
+        finally
+        {
+            isNavigating = false;
+        }
     }
 }

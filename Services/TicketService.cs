@@ -23,12 +23,16 @@ public class MockTicketService
                 Id = 1,
                 TicketNumber = "123456789789",
                 DateIn = new DateTimeOffset(2023, 06, 01, 12, 00, 00, TimeSpan.FromHours(-3)),
+                Price = 20.00,
+                DateOut = new DateTimeOffset(2023, 06, 01, 14, 30, 00, TimeSpan.FromHours(-3)),
             },
             new Ticket()
             {
                 Id = 2,
                 TicketNumber = "320683687451",
                 DateIn = new DateTimeOffset(2023, 06, 01, 15, 00, 00, TimeSpan.FromHours(-3)),
+                Price = 34.00,
+                DateOut = new DateTimeOffset(2023, 06, 01, 19, 30, 00, TimeSpan.FromHours(-3)),
             }
         };
 
@@ -39,7 +43,6 @@ public class MockTicketService
 
     public static List<Ticket> GetTickets()
     {
-        //TODO - Pegar os tickets armazenados no dispositivo.
-        return null;
+        return tickets;
     }
 }

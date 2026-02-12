@@ -2,6 +2,7 @@
 using AppShoppingCenter.Storages;
 using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using ZXing.Net.Maui.Controls;
 
 namespace AppShoppingCenter
 {
@@ -12,6 +13,7 @@ namespace AppShoppingCenter
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseBarcodeReader()
                 .UseMauiCommunityToolkit()
                 .UseMauiCommunityToolkitMediaElement()
                 .ConfigureFonts(fonts =>

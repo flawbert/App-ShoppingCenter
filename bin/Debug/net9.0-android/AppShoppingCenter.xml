@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AppShoppingCenter</name>
+    </assembly>
+    <members>
+        <member name="T:AppShoppingCenter.ViewModels.Cinemas.DetailPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Cinemas.DetailPageViewModel.Movie">
+            <inheritdoc cref="F:AppShoppingCenter.ViewModels.Cinemas.DetailPageViewModel.movie"/>
+        </member>
+        <member name="F:AppShoppingCenter.ViewModels.Cinemas.DetailPageViewModel.closeCommand">
+            <summary>The backing field for <see cref="P:AppShoppingCenter.ViewModels.Cinemas.DetailPageViewModel.CloseCommand"/>.</summary>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Cinemas.DetailPageViewModel.CloseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppShoppingCenter.ViewModels.Cinemas.DetailPageViewModel.CloseAsync"/>.</summary>
+        </member>
+        <member name="F:AppShoppingCenter.ViewModels.Cinemas.DetailPageViewModel.playTrailerCommand">
+            <summary>The backing field for <see cref="P:AppShoppingCenter.ViewModels.Cinemas.DetailPageViewModel.PlayTrailerCommand"/>.</summary>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Cinemas.DetailPageViewModel.PlayTrailerCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppShoppingCenter.ViewModels.Cinemas.DetailPageViewModel.PlayTrailerAsync"/>.</summary>
+        </member>
+        <member name="T:AppShoppingCenter.ViewModels.Cinemas.ListPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Cinemas.ListPageViewModel.Movies">
+            <inheritdoc cref="F:AppShoppingCenter.ViewModels.Cinemas.ListPageViewModel.movies"/>
+        </member>
+        <member name="F:AppShoppingCenter.ViewModels.Cinemas.ListPageViewModel.tapMovieGoToDetailPageCommand">
+            <summary>The backing field for <see cref="P:AppShoppingCenter.ViewModels.Cinemas.ListPageViewModel.TapMovieGoToDetailPageCommand"/>.</summary>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Cinemas.ListPageViewModel.TapMovieGoToDetailPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:AppShoppingCenter.ViewModels.Cinemas.ListPageViewModel.OnTapMovieGoToDetailPage(AppShoppingCenter.Models.Movie)"/>.</summary>
+        </member>
+        <member name="T:AppShoppingCenter.ViewModels.Stores.DetailPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Stores.DetailPageViewModel.Establishment">
+            <inheritdoc cref="F:AppShoppingCenter.ViewModels.Stores.DetailPageViewModel.establishment"/>
+        </member>
+        <member name="F:AppShoppingCenter.ViewModels.Stores.DetailPageViewModel.tapToBackCommand">
+            <summary>The backing field for <see cref="P:AppShoppingCenter.ViewModels.Stores.DetailPageViewModel.TapToBackCommand"/>.</summary>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Stores.DetailPageViewModel.TapToBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AppShoppingCenter.ViewModels.Stores.DetailPageViewModel.OnTapToBack"/>.</summary>
+        </member>
+        <member name="T:AppShoppingCenter.ViewModels.Stores.ListPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Stores.ListPageViewModel.TextSearch">
+            <inheritdoc cref="F:AppShoppingCenter.ViewModels.Stores.ListPageViewModel.textSearch"/>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Stores.ListPageViewModel.EstablishmentsFiltered">
+            <inheritdoc cref="F:AppShoppingCenter.ViewModels.Stores.ListPageViewModel.establishmentsFiltered"/>
+        </member>
+        <member name="M:AppShoppingCenter.ViewModels.Stores.ListPageViewModel.OnTextSearchChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:AppShoppingCenter.ViewModels.Stores.ListPageViewModel.TextSearch"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:AppShoppingCenter.ViewModels.Stores.ListPageViewModel.TextSearch"/> is changed.</remarks>
+        </member>
+        <member name="F:AppShoppingCenter.ViewModels.Stores.ListPageViewModel.tapEstablishmentGoToDetailPageCommand">
+            <summary>The backing field for <see cref="P:AppShoppingCenter.ViewModels.Stores.ListPageViewModel.TapEstablishmentGoToDetailPageCommand"/>.</summary>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Stores.ListPageViewModel.TapEstablishmentGoToDetailPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:AppShoppingCenter.ViewModels.Stores.ListPageViewModel.OnTapEstablishmentGoToDetailPage(AppShoppingCenter.Models.Establishment)"/>.</summary>
+        </member>
+        <member name="T:AppShoppingCenter.ViewModels.Tickets.CameraPageViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:AppShoppingCenter.ViewModels.Tickets.CameraPageViewModel.barcodeDetectedCommand">
+            <summary>The backing field for <see cref="P:AppShoppingCenter.ViewModels.Tickets.CameraPageViewModel.BarcodeDetectedCommand"/>.</summary>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Tickets.CameraPageViewModel.BarcodeDetectedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:AppShoppingCenter.ViewModels.Tickets.CameraPageViewModel.BarcodeDetected(System.String)"/>.</summary>
+        </member>
+        <member name="T:AppShoppingCenter.ViewModels.Tickets.ListPageViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Tickets.ListPageViewModel.Tickets">
+            <inheritdoc cref="F:AppShoppingCenter.ViewModels.Tickets.ListPageViewModel.tickets"/>
+        </member>
+        <member name="T:AppShoppingCenter.ViewModels.Tickets.PayPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Tickets.PayPageViewModel.PixCode">
+            <inheritdoc cref="F:AppShoppingCenter.ViewModels.Tickets.PayPageViewModel.pixCode"/>
+        </member>
+        <member name="F:AppShoppingCenter.ViewModels.Tickets.PayPageViewModel.copyAndPasteCommand">
+            <summary>The backing field for <see cref="P:AppShoppingCenter.ViewModels.Tickets.PayPageViewModel.CopyAndPasteCommand"/>.</summary>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Tickets.PayPageViewModel.CopyAndPasteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppShoppingCenter.ViewModels.Tickets.PayPageViewModel.CopyAndPaste"/>.</summary>
+        </member>
+        <member name="T:AppShoppingCenter.ViewModels.Tickets.ResultPageViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Tickets.ResultPageViewModel.Ticket">
+            <inheritdoc cref="F:AppShoppingCenter.ViewModels.Tickets.ResultPageViewModel.ticket"/>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Tickets.ResultPageViewModel.Tolerance">
+            <inheritdoc cref="F:AppShoppingCenter.ViewModels.Tickets.ResultPageViewModel.tolerance"/>
+        </member>
+        <member name="T:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.TicketNumber">
+            <inheritdoc cref="F:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.ticketNumber"/>
+        </member>
+        <member name="F:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.scanCommand">
+            <summary>The backing field for <see cref="P:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.ScanCommand"/>.</summary>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.ScanCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.Scan"/>.</summary>
+        </member>
+        <member name="F:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.checkTicketNumberCommand">
+            <summary>The backing field for <see cref="P:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.CheckTicketNumberCommand"/>.</summary>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.CheckTicketNumberCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.CheckTicketNumber"/>.</summary>
+        </member>
+        <member name="F:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.listCommand">
+            <summary>The backing field for <see cref="P:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.ListCommand"/>.</summary>
+        </member>
+        <member name="P:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.ListCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:AppShoppingCenter.ViewModels.Tickets.ScanPageViewModel.List"/>.</summary>
+        </member>
+        <member name="T:AppShoppingCenter.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Movie">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Movie" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Movies">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Movies" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Establishment">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Establishment" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TextSearch">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TextSearch" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EstablishmentsFiltered">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EstablishmentsFiltered" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Tickets">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Tickets" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PixCode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PixCode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Ticket">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Ticket" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Tolerance">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Tolerance" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TicketNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TicketNumber" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Movie">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Movie" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Movies">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Movies" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Establishment">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Establishment" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TextSearch">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TextSearch" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EstablishmentsFiltered">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EstablishmentsFiltered" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Tickets">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Tickets" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PixCode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PixCode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Ticket">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Ticket" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Tolerance">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Tolerance" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TicketNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TicketNumber" generated properties.</summary>
+        </member>
+    </members>
+</doc>
