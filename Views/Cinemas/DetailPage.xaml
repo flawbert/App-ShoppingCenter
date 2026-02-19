@@ -65,7 +65,8 @@
             Grid.Row="1"
             Margin="0,-30,0,0"
             Padding="30,40,30,30"
-            BackgroundColor="White"
+            BackgroundColor="{AppThemeBinding Light='#FFFFFF',
+                                              Dark='#000000'}"
             StrokeShape="RoundRectangle 30, 30, 0, 0"
             StrokeThickness="0">
             <ScrollView>

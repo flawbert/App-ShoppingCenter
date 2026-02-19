@@ -55,8 +55,7 @@
 		<Folder Include="Libraries\Behaviours\" />
 		<Folder Include="Models\" />
 		<Folder Include="ViewModels\Authentications\" />
-		<Folder Include="ViewModels\Restaurants\" />
-		<Folder Include="ViewModels\Tickets\"/>
+		<Folder Include="ViewModels\Tickets\" />
 		<Folder Include="Views\Authentications\" />
 	</ItemGroup>
 
@@ -73,6 +72,9 @@
 		</MauiXaml>
 		<MauiXaml Update="Views\Cinemas\ListPage.xaml">
 			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\Restaurants\DetailPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 		<MauiXaml Update="Views\Restaurants\ListPage.xaml">
 			<Generator>MSBuild:Compile</Generator>
